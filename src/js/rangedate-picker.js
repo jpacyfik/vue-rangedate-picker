@@ -1,17 +1,19 @@
 import fecha from 'fecha'
 
 const defaultConfig = {}
-const defaultI18n = 'ID'
+const defaultI18n = 'PL'
 const availableMonths = {
   EN: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November',
     'December'],
   ID: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November',
-    'Desember']
+    'Desember'],
+  PL: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień']
 }
 
 const availableShortDays = {
   EN: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-  ID: ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab']
+  ID: ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'],
+  PL: ['Pon', 'Wto', 'Śro', 'Czw', 'Pt', 'Sob', 'Nd']
 }
 
 const presetRangeLabel = {
@@ -28,12 +30,19 @@ const presetRangeLabel = {
     lastMonth: 'Bulan lalu',
     lastSevenDays: '7 Hari Terakhir',
     lastThirtyDays: '30 Hari Terakhir'
+  },
+  PL: {
+    today: 'Dzisiaj',
+    thisMonth: 'Ten miesiąc',
+    lastMonth: 'Poprzedni miesiąc',
+    lastSevenSays: 'Ostatnie 7 dni',
+    lastThirtyDays: 'Ostatnie 30 dni'
   }
 }
 
 const defaultCaptions = {
-  'title': 'Choose Dates',
-  'ok_button': 'Apply'
+  'title': 'Wybierz daty',
+  'ok_button': 'Zastosuj'
 }
 
 const defaultStyle = {

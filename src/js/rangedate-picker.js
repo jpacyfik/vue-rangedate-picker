@@ -1,19 +1,16 @@
 import fecha from 'fecha'
 
 const defaultConfig = {}
-const defaultI18n = 'PL'
+const defaultI18n = 'ID'
 const availableMonths = {
   EN: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November',
     'December'],
-  ID: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November',
-    'Desember'],
-  PL: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień']
+  ID: ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień']
 }
 
 const availableShortDays = {
   EN: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-  ID: ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'],
-  PL: ['Pon', 'Wto', 'Śro', 'Czw', 'Pt', 'Sob', 'Nd']
+  ID: ['Pon', 'Wto', 'Śro', 'Czw', 'Pt', 'Sob', 'Nd'],
 }
 
 const presetRangeLabel = {
@@ -25,13 +22,6 @@ const presetRangeLabel = {
     lastThirtyDays: 'Last 30 Days'
   },
   ID: {
-    today: 'Hari ini',
-    thisMonth: 'Bulan ini',
-    lastMonth: 'Bulan lalu',
-    lastSevenDays: '7 Hari Terakhir',
-    lastThirtyDays: '30 Hari Terakhir'
-  },
-  PL: {
     today: 'Dzisiaj',
     thisMonth: 'Ten miesiąc',
     lastMonth: 'Poprzedni miesiąc',
